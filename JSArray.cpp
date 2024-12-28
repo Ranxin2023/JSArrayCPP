@@ -35,7 +35,7 @@ int JSQueue::shift(){
     
     
     this->start+=1;
-    if(start>end/2){
+    if(start>20000&&start>end/2){
         arr.erase(arr.begin(), arr.begin()+start);
         end-=start;
         start=0;
